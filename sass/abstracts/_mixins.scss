@@ -1,0 +1,9 @@
+// @mixin df-aic {
+//   display: flex;
+//   align-items: center;
+// }  // create mixin
+
+@mixin flex-ac-jc-sb {
+  align-items: center;
+  justify-content: space-between;
+}

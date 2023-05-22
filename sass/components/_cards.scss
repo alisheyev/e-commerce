@@ -1,0 +1,91 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+@media (min-width: 260px) {
+  .card {
+    width: 100%;
+    min-width: 160px;
+    background: var.$white;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+
+    &:hover {
+      box-shadow: 4px 8px 16px rgba(255, 102, 51, 0.2);
+    }
+
+    .card-img {
+      position: relative;
+
+      img {
+        width: 100%;
+      }
+
+      .percentage-btn {
+        color: var.$white;
+        position: absolute;
+        left: 8px;
+        bottom: 18px;
+      }
+
+      .like-btn {
+        position: absolute;
+        right: 14px;
+        top: 14px;
+      }
+    }
+
+    .card-info {
+      padding: 8px;
+    }
+
+    .card_cost {
+      display: flex;
+      @include mix.flex-ac-jc-sb;
+      column-gap: 40px;
+
+      p {
+        font-family: Rubik-Regular;
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 150%;
+        color: var.$grey;
+      }
+
+      .cost__card {
+        h6 {
+          font-family: Rubik-Bold;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 150%;
+          color: var.$black41;
+        }
+      }
+
+      .cast__simple {
+        h6 {
+          font-family: Rubik-Regular;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 150%;
+          color: var.$black60;
+        }
+      }
+    }
+
+    .product_name {
+      margin: 8px 0px;
+      h4 {
+        height: 54px;
+        font-family: Rubik-Regular;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        color: var.$black41;
+      }
+    }
+
+    .stars {
+      margin-bottom: 8px;
+    }
+  }
+}

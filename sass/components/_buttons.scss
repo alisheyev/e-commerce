@@ -1,0 +1,49 @@
+.card-btn {
+  padding: 8px 0px;
+  width: 100%;
+  font-family: Rubik-Regular;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #70c05b;
+  text-align: center;
+  border: 1px solid #70c05b;
+  border-radius: 4px;
+
+  &:hover {
+    background: #ff6633;
+    border: 1px solid #ff6633;
+    color: #ffffff;
+    transition: 0.7s;
+  }
+}
+
+.percentage-btn {
+  padding: 3px 8px;
+  font-family: Rubik-Regular;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  text-align: center;
+  background: #ff6633;
+  border-radius: 4px;
+}
+
+.menu-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: #70c05b;
+  border-radius: 4px;
+}
+
+.shopping-btn {
+  width: 14.28px;
+  height: 15px;
+  border-radius: 45px;
+  text-align: center;
+  background: #ff6633;
+  border-radius: 50%;
+}
